@@ -10,100 +10,130 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#">FirstKlickk</a>
-      <nav class="nav" aria-label="Main navigation">
+    <div class="wrap header-row">
+      <a class="brand" href="#top">FirstKlickk</a>
+      <nav class="nav" id="main-nav">
         <a href="#services">Services</a>
-        <a href="#work">Work</a>
+        <a href="#work">Featured</a>
         <a href="#clients">Clients</a>
         <a href="#contact" class="btn">Contact</a>
       </nav>
-      <button class="menu-btn" aria-label="menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="menu">☰</button>
     </div>
   </header>
 
-  <section class="hero" id="top">
-    <div class="hero-inner wrap">
-      <div class="hero-text">
-        <h1>Make noise. Get results.</h1>
-        <p class="lead">Performance marketing, creative content & ads that convert — built for local brands & creators.</p>
-        <div class="hero-cta">
-          <a class="btn btn--primary" href="#contact">Get a Free Audit</a>
-          <a class="btn btn--ghost" href="#work">See our Work</a>
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner wrap">
+        <div class="hero-text">
+          <h1>Make noise. Get results.</h1>
+          <p class="lead">Performance marketing, creative content & ads that convert. Built for local brands & creators.</p>
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#contact">Get a Free Audit</a>
+            <a class="btn" href="#work">See our Results</a>
+          </div>
+          <ul class="hero-meta">
+            <li>100+ creatives</li>
+            <li>Avg 2.4x ROAS</li>
+            <li>Hyderabad • Remote</li>
+          </ul>
         </div>
-        <ul class="hero-meta">
-          <li>100+ creatives</li><li>Avg 2.4x ROAS</li><li>Hyderabad • Remote</li>
-        </ul>
-      </div>
-      <div class="hero-media">
-        <img src="assets/hero-large.png" alt="Campaign mockups" />
-      </div>
-    </div>
-  </section>
 
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Social Media</h3>
-          <p>Content strategy, Reels, Carousels, Community & growth playbooks.</p>
-        </div>
-        <div class="card">
-          <h3>Paid Ads</h3>
-          <p>Meta & Google full-funnel campaigns with clean tracking & reporting.</p>
-        </div>
-        <div class="card">
-          <h3>Creative Studio</h3>
-          <p>UGC, product shoots & trend-aligned ad creatives that perform.</p>
+        <div class="hero-media">
+          <img src="assets/hero-large.png" alt="FirstKlickk — Campaign mockups" />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="work" class="section section--alt">
-    <div class="wrap">
-      <h2>Featured Work</h2>
-      <div class="work-grid">
-        <figure><img src="assets/work1.png" alt=""><figcaption>Restaurant — 1.8x ROAS (21 days)</figcaption></figure>
-        <figure><img src="assets/work2.png" alt=""><figcaption>Salon Rebrand — 220% reach</figcaption></figure>
-        <figure><img src="assets/work3.png" alt=""><figcaption>Creator Funnel — 3.2% CTR</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section id="clients" class="section">
-    <div class="wrap">
-      <h2>Clients & Partners</h2>
-      <div class="clients">
-        <img src="assets/client1.png" alt="client">
-        <img src="assets/client2.png" alt="client">
-        <img src="assets/client3.png" alt="client">
-        <img src="assets/client4.png" alt="client">
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <div class="wrap">
-      <h2>Let's talk</h2>
-      <p>Tell us about your goal for the next 30 days.</p>
-      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <div class="row">
-          <input name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Email" required />
+    <section id="services" class="section">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Social Media</h3>
+            <p>Content strategy, Reels, Carousels, Community & growth playbooks.</p>
+          </div>
+          <div class="card">
+            <h3>Paid Ads</h3>
+            <p>Meta & Google full-funnel campaigns with clean tracking & reporting.</p>
+          </div>
+          <div class="card">
+            <h3>Creative Studio</h3>
+            <p>UGC, product shoots & trend-aligned ad creatives that perform.</p>
+          </div>
         </div>
-        <input name="url" placeholder="Instagram or website" />
-        <textarea name="message" rows="4" placeholder="What do you want to achieve?"></textarea>
-        <button class="btn btn--primary" type="submit">Send</button>
-      </form>
-      <p class="muted">Or WhatsApp: <a href="https://wa.me/916281820821">+91 62818 20821</a></p>
-    </div>
-  </section>
+      </div>
+    </section>
+
+    <section id="work" class="section section--alt">
+      <div class="wrap">
+        <h2>Featured Work</h2>
+
+        <!-- TEXT-ONLY case study cards -->
+        <div class="work-grid text-only">
+          <div class="case">
+            <h3>Restaurant Launch Campaign</h3>
+            <p>Local targeting + optimized creatives produced <strong>1.8x ROAS in 21 days</strong>. Focus: bookings & repeat customers.</p>
+          </div>
+
+          <div class="case">
+            <h3>Salon Brand Revamp</h3>
+            <p>Rebrand + content cadence achieved a <strong>220% increase in reach</strong> and higher booking conversion rates.</p>
+          </div>
+
+          <div class="case">
+            <h3>Creator Funnel Optimization</h3>
+            <p>Story-first video ads + simplified landing flow lifted CTR to <strong>3.2%</strong> and improved lead quality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="section">
+      <div class="wrap">
+        <h2>Clients & Partners</h2>
+
+        <!-- TEXT-ONLY client list -->
+        <div class="clients text-list">
+          <ul>
+            <li><strong>Good Melts</strong> — Home fragrance brand</li>
+            <li><strong>Urban Grill</strong> — Local restaurant</li>
+            <li><strong>Glow Studio</strong> — Salon & beauty</li>
+            <li><strong>Fitness Fuel</strong> — Gym & nutrition</li>
+            <li><strong>QuickKart</strong> — Local delivery startup</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap">
+        <h2>Let's talk</h2>
+        <p>Tell us about your goal for the next 30 days.</p>
+
+        <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="row">
+            <input name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+
+          <input name="url" placeholder="Instagram or website" />
+          <textarea name="message" rows="4" placeholder="What do you want to achieve?"></textarea>
+
+          <div class="form-actions">
+            <button class="btn btn--primary" type="submit">Send</button>
+            <a class="btn btn--ghost" href="https://wa.me/916281820821" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </form>
+
+        <p class="muted">Or email: <a href="mailto:srikanthdandla4@gmail.com">srikanthdandla4@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>© {YEAR} FirstKlickk. Designed in blue & black.</p>
+    <div class="wrap footer-row">
+      <p>© <span id="year"></span> FirstKlickk. Designed with #1f3c88 & black.</p>
       <nav class="foot-nav"><a href="#">Privacy</a><a href="#">Terms</a></nav>
     </div>
   </footer>
