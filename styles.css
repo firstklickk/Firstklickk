@@ -150,3 +150,44 @@ input, textarea {
   .menu-btn { display: block; }
   .nav { display: none; flex-direction: column; background: #111; padding: 10px; }
 }
+/* TESTIMONIALS */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(31,60,136,0.4);
+}
+
+.testimonial .quote {
+  font-style: italic;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.testimonial .author {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
