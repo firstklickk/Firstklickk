@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FirstKlickk — Creative Performance Agency</title>
-  <meta name="description" content="FirstKlickk — a creative performance agency helping brands grow through content, ads, and strategy.">
+  <meta name="description" content="FirstKlickk — a creative performance agency helping brands grow through creative content, ads, and performance marketing." />
+  <meta name="keywords" content="digital marketing, social media, performance ads, creative agency, FirstKlickk" />
+  <meta name="author" content="FirstKlickk" />
+  <link rel="icon" href="assets/favicon.svg" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Open Graph (social preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FirstKlickk — Creative Performance Agency" />
+  <meta property="og:description" content="We build brands with creative strategy, bold content, and data-driven performance marketing." />
+  <meta property="og:url" content="https://firstklickk.in/" />
+  <meta property="og:image" content="https://firstklickk.in/assets/hero-large.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://firstklickk.in/" />
+
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics (gtag) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DMHREZ0FV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,26 +32,47 @@
     gtag('config', 'G-2DMHREZ0FV');
   </script>
 
-  <link rel="icon" href="assets/favicon.svg" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Schema.org / JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"FirstKlickk",
+    "url":"https://firstklickk.in",
+    "logo":"https://firstklickk.in/assets/favicon.svg",
+    "sameAs":[
+      "https://instagram.com/firstklickk",
+      "https://linkedin.com/company/firstklickk"
+    ],
+    "contactPoint":[
+      {
+        "@type":"ContactPoint",
+        "email":"hello@firstklickk.in",
+        "contactType":"customer support"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#1f3c88">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#top">FirstKlickk</a>
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact" class="btn">Contact</a>
-      </nav>
-      <button class="menu-btn" aria-label="menu">☰</button>
-    </div>
-  </header>
 
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">FirstKlickk</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="menu">☰</button>
+  </div>
+</header>
+
+<main>
   <section class="hero" id="top">
     <div class="hero-inner wrap">
       <div class="hero-text">
@@ -45,8 +83,8 @@
           <a class="btn btn--ghost" href="#work">See Work</a>
         </div>
       </div>
-      <div class="hero-media">
-        <img src="assets/hero-large.png" alt="FirstKlickk Campaign Preview" />
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-large.png" alt="FirstKlickk campaign preview" />
       </div>
     </div>
   </section>
@@ -114,12 +152,10 @@
           <p class="quote">"FirstKlickk completely transformed our brand’s social media presence. We saw real leads within weeks!"</p>
           <p class="author">— <strong>Neha Sharma</strong>, Founder of Glow Studio</p>
         </div>
-
         <div class="testimonial">
           <p class="quote">"Their creative ideas and ad strategy doubled our online sales in just one month. Highly recommend!"</p>
           <p class="author">— <strong>Ravi Teja</strong>, Owner of Urban Grill</p>
         </div>
-
         <div class="testimonial">
           <p class="quote">"We’ve worked with agencies before, but FirstKlickk’s clarity and communication are unmatched."</p>
           <p class="author">— <strong>Anjali Rao</strong>, Marketing Head at QuickKart</p>
@@ -141,20 +177,21 @@
         <textarea name="message" rows="4" placeholder="What are your marketing goals?"></textarea>
         <button class="btn btn--primary" type="submit">Send</button>
       </form>
-      <p class="muted">Or WhatsApp us at <a href="https://wa.me/916281820821" target="_blank">+91 62818 20821</a></p>
+      <p class="muted">Or WhatsApp us at <a href="https://wa.me/916281820821" target="_blank" rel="noopener">+91 62818 20821</a></p>
     </div>
   </section>
+</main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© 2025 FirstKlickk. All rights reserved.</p>
-      <nav class="foot-nav">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </nav>
-    </div>
-  </footer>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2025 FirstKlickk. All rights reserved.</p>
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
