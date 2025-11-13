@@ -4,26 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FirstKlickk — Creative Performance Agency</title>
-  <meta name="description" content="FirstKlickk — a creative performance agency helping brands grow through creative content, ads, and performance marketing." />
-  <meta name="keywords" content="digital marketing, social media, performance ads, creative agency, FirstKlickk" />
-  <meta name="author" content="FirstKlickk" />
-  <link rel="icon" href="assets/favicon.svg" />
 
-  <!-- Open Graph (social preview) -->
+  <!-- SEO -->
+  <meta name="description" content="FirstKlickk — creative performance agency. Strategy, content, and performance ads that grow brands." />
+  <meta name="author" content="FirstKlickk" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="FirstKlickk — Creative Performance Agency" />
-  <meta property="og:description" content="We build brands with creative strategy, bold content, and data-driven performance marketing." />
-  <meta property="og:url" content="https://firstklickk.in/" />
+  <meta property="og:description" content="Strategy, creative content and ROI-driven ads for growing brands." />
+  <meta property="og:url" content="https://firstklickk.in" />
   <meta property="og:image" content="https://firstklickk.in/assets/hero-large.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://firstklickk.in/" />
-
-  <!-- Poppins font -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Google Analytics (gtag) -->
+  <!-- Google Analytics (your tag) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2DMHREZ0FV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -32,166 +27,164 @@
     gtag('config', 'G-2DMHREZ0FV');
   </script>
 
-  <!-- Schema.org / JSON-LD (Organization) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"FirstKlickk",
-    "url":"https://firstklickk.in",
-    "logo":"https://firstklickk.in/assets/favicon.svg",
-    "sameAs":[
-      "https://instagram.com/firstklickk",
-      "https://linkedin.com/company/firstklickk"
-    ],
-    "contactPoint":[
-      {
-        "@type":"ContactPoint",
-        "email":"hello@firstklickk.in",
-        "contactType":"customer support"
-      }
-    ]
-  }
-  </script>
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/">FirstKlickk</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="hamburger" aria-label="Open menu">☰</button>
+    </div>
+  </header>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#top">FirstKlickk</a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#clients">Clients</a>
-      <a href="#contact" class="btn">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="menu">☰</button>
-  </div>
-</header>
-
-<main>
-  <section class="hero" id="top">
-    <div class="hero-inner wrap">
-      <div class="hero-text">
-        <h1>Make Noise. Get Results.</h1>
-        <p class="lead">We build brands with creative strategy, bold content, and data-driven performance marketing.</p>
-        <div class="hero-cta">
-          <a class="btn btn--primary" href="#contact">Get a Free Audit</a>
-          <a class="btn btn--ghost" href="#work">See Work</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-card animate-up">
+        <small class="eyebrow">CREATIVE STUDIO + LAB</small>
+        <h1>Let's get <span class="accent">digital</span></h1>
+        <p class="lead">Our new digital marketing packages are built for growth — creative, data-driven, and measurable.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact">Work with us</a>
+          <a class="btn btn-ghost" href="#packages">See packages</a>
         </div>
       </div>
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/hero-large.png" alt="FirstKlickk campaign preview" />
+      <div class="hero-media animate-fade">
+        <img src="assets/hero-large.png" alt="FirstKlickk campaign preview">
       </div>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <!-- WHAT WE OFFER -->
+  <section id="services" class="section dark">
     <div class="wrap">
-      <h2>What We Do</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Social Media Strategy</h3>
-          <p>We manage your brand's digital voice — planning, creating, and optimizing for growth.</p>
+      <h2 class="section-title animate-up">What we offer</h2>
+      <div class="services-grid">
+        <div class="service-card animate-up">
+          <h3>Data-driven Strategies</h3>
+          <p>Plans tailored to your market and measurable KPIs that actually move the needle.</p>
         </div>
-        <div class="card">
-          <h3>Performance Ads</h3>
-          <p>ROI-focused ad campaigns on Meta and Google that turn clicks into conversions.</p>
-        </div>
-        <div class="card">
+        <div class="service-card animate-up delay-1">
           <h3>Creative Studio</h3>
-          <p>Modern visuals, storytelling, and trend-based content that engages and converts.</p>
+          <p>Trend-forward content, motion, and design to capture attention and build brand recall.</p>
+        </div>
+        <div class="service-card animate-up delay-2">
+          <h3>Performance Ads</h3>
+          <p>ROI-first campaigns across Meta & Google — optimized for leads and revenue.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="work" class="section section--alt">
+  <!-- PACKAGES -->
+  <section id="packages" class="section gradient-band">
     <div class="wrap">
-      <h2>Featured Work</h2>
-      <div class="work-grid text-only">
-        <div class="case">
-          <h3>Restaurant Launch Campaign</h3>
-          <p>Achieved <strong>1.8x ROAS</strong> in 21 days using hyper-local targeting and conversion-focused creatives.</p>
+      <h2 class="section-title light animate-up">Our packages</h2>
+      <p class="subtle">Choose from simple, affordable packages built for results.</p>
+      <div class="packages-grid">
+        <article class="pkg-card animate-up">
+          <h4>Foundation</h4>
+          <ul>
+            <li>Marketing analysis & strategy</li>
+            <li>Basic dashboard</li>
+          </ul>
+        </article>
+        <article class="pkg-card animate-up delay-1">
+          <h4>Solution</h4>
+          <ul>
+            <li>Targeted campaigns</li>
+            <li>Ongoing optimisation</li>
+          </ul>
+        </article>
+        <article class="pkg-card animate-up delay-2">
+          <h4>Digit-All</h4>
+          <ul>
+            <li>Full-stack marketing</li>
+            <li>Creative + ads + dashboard (6 months)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / TESTIMONIALS -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <h2 class="section-title animate-up">Featured work</h2>
+      <div class="work-grid">
+        <div class="case animate-fade">
+          <h3>Restaurant Launch</h3>
+          <p><strong>1.8x ROAS</strong> in 21 days.</p>
         </div>
-        <div class="case">
-          <h3>Salon Brand Revamp</h3>
-          <p>Redesigned their brand identity and boosted visibility with influencer tie-ups — <strong>+220% reach</strong>.</p>
+        <div class="case animate-fade delay-1">
+          <h3>Salon Rebrand</h3>
+          <p>Brand redesign + influencer push — <strong>+220% reach</strong>.</p>
         </div>
-        <div class="case">
-          <h3>Creator Funnel Optimization</h3>
-          <p>Enhanced click-through rate to <strong>3.2%</strong> via content A/B testing and remarketing loops.</p>
+        <div class="case animate-fade delay-2">
+          <h3>Creator Funnel</h3>
+          <p>CTR improved to <strong>3.2%</strong> with A/B testing.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="clients" class="section">
+  <section id="testimonials" class="section dark">
     <div class="wrap">
-      <h2>Clients & Partners</h2>
-      <div class="clients text-list">
-        <ul>
-          <li><strong>Good Melts</strong> — Home fragrance brand</li>
-          <li><strong>Urban Grill</strong> — Restaurant chain</li>
-          <li><strong>Glow Studio</strong> — Salon & beauty brand</li>
-          <li><strong>Fitness Fuel</strong> — Gym & sports brand</li>
-          <li><strong>QuickKart</strong> — Delivery startup</li>
-        </ul>
+      <h2 class="section-title animate-up">What customers say</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial animate-up">
+          <p>"FirstKlickk transformed our social presence — we saw leads within weeks."</p>
+          <footer>— Neha Sharma, Glow Studio</footer>
+        </blockquote>
+        <blockquote class="testimonial animate-up delay-1">
+          <p>"Their clarity and communication are unmatched."</p>
+          <footer>— Ravi Teja, Urban Grill</footer>
+        </blockquote>
+        <blockquote class="testimonial animate-up delay-2">
+          <p>"A creative partner who drives measurable results."</p>
+          <footer>— Anjali Rao, QuickKart</footer>
+        </blockquote>
       </div>
     </div>
   </section>
 
-  <section id="testimonials" class="section section--alt">
-    <div class="wrap">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonials">
-        <div class="testimonial">
-          <p class="quote">"FirstKlickk completely transformed our brand’s social media presence. We saw real leads within weeks!"</p>
-          <p class="author">— <strong>Neha Sharma</strong>, Founder of Glow Studio</p>
-        </div>
-        <div class="testimonial">
-          <p class="quote">"Their creative ideas and ad strategy doubled our online sales in just one month. Highly recommend!"</p>
-          <p class="author">— <strong>Ravi Teja</strong>, Owner of Urban Grill</p>
-        </div>
-        <div class="testimonial">
-          <p class="quote">"We’ve worked with agencies before, but FirstKlickk’s clarity and communication are unmatched."</p>
-          <p class="author">— <strong>Anjali Rao</strong>, Marketing Head at QuickKart</p>
-        </div>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact gradient-band">
+    <div class="wrap contact-grid animate-up">
+      <div class="contact-left">
+        <h2>Questions?</h2>
+        <p>Reach us at <a href="mailto:hello@firstklickk.in">hello@firstklickk.in</a> or WhatsApp <a href="https://wa.me/916281820821">+91 62818 20821</a></p>
+        <address>FirstKlickk • Hyderabad</address>
+      </div>
+      <div class="contact-right">
+        <form id="contact-form" action="https://formspree.io/f/mjkjvdnd" method="POST">
+          <input name="name" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Email" required />
+          <input name="company" placeholder="Company (optional)" />
+          <textarea name="message" rows="4" placeholder="Tell us about your goals"></textarea>
+          <button class="btn btn-primary" type="submit">Send message</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <div class="wrap">
-      <h2>Let's Talk</h2>
-      <p>Tell us about your business goals — we'll respond within 24 hours.</p>
-      <form id="contact-form" action="https://formspree.io/f/mjkjvdnd" method="POST">
-        <div class="row">
-          <input name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-        </div>
-        <input name="url" placeholder="Instagram / Website URL" />
-        <textarea name="message" rows="4" placeholder="What are your marketing goals?"></textarea>
-        <button class="btn btn--primary" type="submit">Send</button>
-      </form>
-      <p class="muted">Or WhatsApp us at <a href="https://wa.me/916281820821" target="_blank" rel="noopener">+91 62818 20821</a></p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> FirstKlickk. All rights reserved.</p>
+      <nav class="foot-nav">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© 2025 FirstKlickk. All rights reserved.</p>
-    <nav class="foot-nav" aria-label="Footer">
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-    </nav>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
